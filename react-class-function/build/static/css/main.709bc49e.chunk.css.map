@@ -1,0 +1,1 @@
+{"version":3,"sources":["App.css"],"names":[],"mappings":"AAAA,WACE,oBAAoB,CACpB,UAAW,CACX,WACF","file":"main.709bc49e.chunk.css","sourcesContent":[".container{\n  border:5px solid red;\n  margin: 5px;\n  padding: 5px;\n}"]}
