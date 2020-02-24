@@ -52,7 +52,7 @@ class App extends Component {
 		article: {
 			item:{
 				title: 'Welcome',
-				desc: 'Hello, React &amp; Ajax'
+				desc: 'Hello, React & Ajax'
 			},
 			isLoading: false
 			
