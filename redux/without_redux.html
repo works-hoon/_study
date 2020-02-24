@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.container{
+			border: 5px solid #000;
+			padding:10px;
+		}
+	</style>
+</head>
+<body>
+	<div id="red"></div>
+	<div id="green"></div>
+	<div id="blue"></div>
+	<script>
+		function red() {
+			document.querySelector('#red').innerHTML = `
+				<div class="container" id="conponent_red">
+					<h1>red</h1>
+					<button type="button"
+						onclick="
+						document.querySelector('#conponent_red').style.backgroundColor='red';
+						document.querySelector('#conponent_green').style.backgroundColor='red';
+						document.querySelector('#conponent_blue').style.backgroundColor='red';
+						">fire</button>
+				</div>
+			`;
+		}
+		red();
+		function green() {
+			document.querySelector('#green').innerHTML = `
+				<div class="container" id="conponent_green">
+					<h1>green</h1>
+					<button type="button"
+						onclick="
+						document.querySelector('#conponent_red').style.backgroundColor='green';
+						document.querySelector('#conponent_green').style.backgroundColor='green';
+						document.querySelector('#conponent_blue').style.backgroundColor='green';
+						">fire</button>
+				</div>
+			`;
+		}
+		green();
+		function blue() {
+			document.querySelector('#blue').innerHTML = `
+				<div class="container" id="conponent_blue">
+					<h1>blue</h1>
+					<button type="button"
+						onclick="
+						document.querySelector('#conponent_red').style.backgroundColor='blue';
+						document.querySelector('#conponent_green').style.backgroundColor='blue';
+						document.querySelector('#conponent_blue').style.backgroundColor='blue';
+						">fire</button>
+				</div>
+			`;
+		}
+		blue();
+	</script>
+</body>
+</html>
